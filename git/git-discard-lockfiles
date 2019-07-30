@@ -1,0 +1,7 @@
+# Discard package lock changes at current directory
+git checkout -- 'package-lock.json'
+
+# Discard package lock changes at descending directories
+git checkout -- '*/package-lock.json'
+
+echo "Discarded all package lock changes"
