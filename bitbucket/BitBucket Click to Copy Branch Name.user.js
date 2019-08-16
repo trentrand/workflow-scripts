@@ -11,9 +11,10 @@
 (function() {
     'use strict';
 
-    const branchNameLabel = document.querySelector('.ref-name-from > .branch-name');
+    const branchNameLabels = document.querySelectorAll('.branch-from-to .branch-name')
 
-    branchNameLabel.addEventListener('click', function(event) {
+    branchNameLabels.forEach((branchNameLabel) => {
+        branchNameLabel.addEventListener('click', function(event) {
         const branchName = event.target.textContent;
         navigator.clipboard.writeText(branchName).then(function() {
             console.log('Copied to clipboard!');
@@ -25,4 +26,5 @@
             }, 500);
         });
     });
+  });
 })();
