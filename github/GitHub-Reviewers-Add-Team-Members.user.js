@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GitHub Reviewers - Add Team Members
-// @version      1.0
+// @version      1.1
 // @description  Add each team member individually as reviewers
 // @author       Trent Rand <contact@trentrand.com>
 // @match        https://github.com/sqsp/squarespace-v6/*
@@ -19,8 +19,7 @@ const INJECTION_PARENT_SELECTOR = '.select-menu-item';
 const INJECTION_SELECTOR = '.select-menu-item-gravatar';
 
 let userIDs = {
-  'editing-system': ['kauffecup', 'ijemmao', 'istateside', 'vyu-sqsp', 'zachgawlik', 'nguyenjessie'],
-  'styling-system': ['zonika', 'dotrakoun-sqsp', 'juliayangg', 'pynate', 'trentrand', 'calexander-sqs'],
+  'styling-system': ['zonika', 'dotrakoun-sqsp', 'pynate', 'trentrand', 'calexander-sqs', 'deanhunt'],
 }
 
 var Spy = (function () {
